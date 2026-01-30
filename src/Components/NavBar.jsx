@@ -90,7 +90,7 @@ export default function Navbar() {
             <NavLink
               to="/page-5"
               onClick={() => setOpen(false)}
-              className="hidden md:flex rounded-full bg-green-600 px-8 py-4 text-center text-white uppercase"
+              className="hidden md:flex rounded-full bg-green-600 px-8 py-4 text-center text-white uppercase hover:"
             >
               get a quote
             </NavLink>
