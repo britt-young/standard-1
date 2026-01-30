@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@import "./styles/fonts.css";
+
+/* CUSTOMIZE FONTS & NAMES, ADD BREAKPOINTS, AND CUSTOM COLORS IN THEME */
+@theme {
+  --font-primary: "Public Sans", system-ui, Avenir, Helvetica, Arial, sans-serif; 
+}
+
+@layer utilities {
+}
+
+@layer base {
+
+
+}
+
+@layer components {
+
+}
+
+
