@@ -1,4 +1,4 @@
-import HomeHero from "../Components/Animations/HomeHero"
+import HomeHero from "../Components/HomeHero"
 
 
 const Page1 = () => {

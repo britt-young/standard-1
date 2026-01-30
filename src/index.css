@@ -4,14 +4,11 @@
 
 /* CUSTOMIZE FONTS & NAMES, ADD BREAKPOINTS, AND CUSTOM COLORS IN THEME */
 @theme {
-  --font-primary: "Public Sans", system-ui, Avenir, Helvetica, Arial, sans-serif; 
+  --font-primary:
+    "Public Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-
-
 @layer base {
-
-
 }
 
 @layer components {
@@ -32,20 +29,20 @@
   .nav-link.active {
     @apply text-blue-600;
   }
-
-
+.btn-primary {
+    @apply rounded-full bg-white border-2 border-white px-8 py-4 text-center text-black uppercase shadow-md shadow-gray-600 hover:bg-transparent hover:text-white transition duration-500 cursor-pointer;
+  }
+  .btn-secondary {
+    @apply rounded-full bg-transparent border-2 border-white px-8 py-4 text-center text-white uppercase shadow-md shadow-gray-600 hover:bg-white hover:border-white hover:text-black transition duration-500 cursor-pointer;
+  }
 }
 
 @layer utilities {
   .animate-ui-spring {
-    transition-timing-function: cubic-bezier(.34, 1.56, .64, 1);
+    transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
   }
   .svg-center {
     transform-box: fill-box;
     transform-origin: center;
   }
 }
-
-
-
-
