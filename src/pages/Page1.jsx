@@ -1,8 +1,9 @@
+import HomeHero from "../Components/Animations/HomeHero"
 
 
 const Page1 = () => {
   return (
-    <div className="bg-red-500 min-h-screen">Page1</div>
+    <HomeHero />
   )
 }
 
