@@ -22,10 +22,10 @@ function App() {
       <Route path="/" element={<RootLayout />} errorElement={<Error />}>
         {/* child routes */}
         <Route index element={<Page1 />} />
-        <Route path="page2" element={<Page2 />} />
-        <Route path="page3" element={<Page3 />} />
-        <Route path="page4" element={<Page4 />} />
-        <Route path="page5" element={<Page5 />} />
+        <Route path="page-2" element={<Page2 />} />
+        <Route path="page-3" element={<Page3 />} />
+        <Route path="page-4" element={<Page4 />} />
+        <Route path="page-5" element={<Page5 />} />
         <Route path="privacy-terms" element={<Legal />} />
       </Route>,
     ),

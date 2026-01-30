@@ -7,8 +7,7 @@
   --font-primary: "Public Sans", system-ui, Avenir, Helvetica, Arial, sans-serif; 
 }
 
-@layer utilities {
-}
+
 
 @layer base {
 
@@ -16,7 +15,37 @@
 }
 
 @layer components {
+  .nav-link {
+    @apply relative font-medium text-gray-700 transition-colors duration-200;
+  }
+
+  .nav-link::after {
+    content: "";
+    @apply absolute left-0 -bottom-1 h-0.5 w-full scale-x-0 bg-blue-600 transition-transform duration-300 origin-left;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    @apply scale-x-100;
+  }
+
+  .nav-link.active {
+    @apply text-blue-600;
+  }
+
 
 }
+
+@layer utilities {
+  .animate-ui-spring {
+    transition-timing-function: cubic-bezier(.34, 1.56, .64, 1);
+  }
+  .svg-center {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+}
+
+
 
 
