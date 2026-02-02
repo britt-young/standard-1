@@ -1,12 +1,12 @@
-import HomeAbout from "../Components/HomeAbout";
+import HomeServices from "../Components/HomeServices";
 import HomeHero from "../Components/HomeHero";
-import landscaping from "../assets/landscaping-silhouette1.svg";
+import HomeAbout from "../Components/HomeAbout";
 
 const Page1 = () => {
   return (
     <div>
       <HomeHero />
-      {/* <img className="absolute -bottom-16" src={landscaping} alt="landscapingsvg" /> */}
+      <HomeServices />
       <HomeAbout />
     </div>
   );
