@@ -61,10 +61,10 @@ export default function Navbar() {
         </div>
 
         {/* Main nav */}
-        <div className="bg-gray-100 text-black h-32">
+        <div className="bg-gray-100 text-black h-fit py-1">
           <div className="mx-auto max-w-7xl px-4 h-full flex items-center justify-between">
             <NavLink to="/" className="h-full flex items-center">
-              <img src={logo} alt="Logo" className="h-30" />
+              <img src={logo} alt="Logo" className="h-15 md:h-20 lg:h-25" />
             </NavLink>
 
             <nav className="hidden md:flex gap-8 items-center">
