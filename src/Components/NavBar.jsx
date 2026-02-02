@@ -1,20 +1,13 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import AnimatedMenuIcon from "./Animations/AnimatedMenuIcon";
 import logo from "../assets/imgs/nav-logo.jpg";
-import { MdPhoneAndroid, MdEmail } from "react-icons/md";
-import { AiFillClockCircle } from "react-icons/ai";
+import { Smartphone , Store, Send    } from 'lucide-react';
 import RippleProvider from "./Animations/RippleProvider";
+import { ArrowUpRight } from 'lucide-react';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setIsSticky(window.scrollY > 80);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   const navLinks = [
     { name: "Page 2", path: "/page-2" },
@@ -27,14 +20,9 @@ export default function Navbar() {
   const emailUser = "western";
   const emailDomain = "email.com";
 
-  // // Address for Apple Maps
-  // const address = "Tallahassee, FL., USA";
-  // const mapsLink = `https://maps.apple.com/?q=${encodeURIComponent(address)}`;
-
   // Phone number
   const phoneNumber = "+18501234567";
 
-  // Function to render email dynamically
   const renderEmail = () => {
     const email = `${emailUser}@${emailDomain}`;
     return (
@@ -51,35 +39,31 @@ export default function Navbar() {
     <RippleProvider>
       <header className="relative z-50">
         {/* Utility bar */}
-        <div className="bg-white text-black text-sm">
-          <div className="mx-auto max-w-7xl px-4 h-16 flex items-center justify-end gap-6">
-            {/* Phone */}
+        <div className="bg-white text-black text-sm hidden md:block border-b border-gray-300 ">
+          <div className="mx-auto max-w-7xl px-4 h-12 flex items-center justify-end gap-6">
             <p>
-              <MdPhoneAndroid className="inline-block w-4 me-2" />
+              <Smartphone size={18} strokeWidth={1.5} className="me-1 inline-flex"/>
               <a href={`tel:${phoneNumber}`} className="hover:underline">
                 (850) 123-4567
               </a>
             </p>
-            <span className="gap-2 flex items-center">
-              <AiFillClockCircle />
+
+            <p >
+              <Store size={18} strokeWidth={1.5} className="me-1 inline-flex"/>
               Mon - Fri: 9:00 AM - 6:00 PM
-            </span>
-            {/* Email */}
+            </p>
+
             <p>
-              <MdEmail className="inline-block w-4 me-2 " />
+              <Send size={18} strokeWidth={1.5} className="me-1 inline-flex" />
               {renderEmail()}
             </p>
           </div>
         </div>
 
         {/* Main nav */}
-        <div
-          className={`bg-gray-100 transition-shadow text-black h-32 ${
-            isSticky && "fixed top-0 left-0 right-0 shadow-md"
-          }`}
-        >
+        <div className="bg-gray-100 text-black h-32">
           <div className="mx-auto max-w-7xl px-4 h-full flex items-center justify-between">
-            <NavLink to="/" className="h-full flex items-start">
+            <NavLink to="/" className="h-full flex items-center">
               <img src={logo} alt="Logo" className="h-30" />
             </NavLink>
 
@@ -89,6 +73,7 @@ export default function Navbar() {
                   {link.name}
                 </NavLink>
               ))}
+
               <NavLink
                 data-ripple
                 to="/page-5"
@@ -107,14 +92,15 @@ export default function Navbar() {
               <AnimatedMenuIcon open={open} />
             </button>
           </div>
+          
 
-          {/* Mobile menu (below navbar) */}
+          {/* Mobile menu */}
           <div
-            className={`md:hidden overflow-hidden transition-[max-height] duration-300 bg-white ${
+            className={`md:hidden overflow-hidden transition-[max-height] duration-500 bg-white ${
               open ? "max-h-96" : "max-h-0"
             }`}
           >
-            <nav className="px-4 py-4 flex flex-col gap-4 border-t border-gray-300">
+            <nav className="px-4 py-4 flex flex-col items-center gap-4 border-t border-gray-300">
               {navLinks.map((link) => (
                 <NavLink
                   key={link.name}
@@ -126,14 +112,14 @@ export default function Navbar() {
                 </NavLink>
               ))}
 
-              <NavLink
+              <a
                 data-ripple
-                to="/signup"
-                onClick={() => setOpen(false)}
-                className="mt-2 rounded-lg bg-blue-600 px-4 py-3 text-center text-white font-medium"
-              >
-                Get Started
-              </NavLink>
+                className="w-full uppercase hover:underline flex justify-between rounded-full bg-green-600 border-2 border-green-600 hover:bg-white hover:text-black px-8 py-4 text-center text-white transition duration-500 font-semibold"
+                 href={`tel:${phoneNumber}`}>
+                get a free quote: (850) 123-4567 <ArrowUpRight className="inline-block" />
+              
+              </a>
+              
             </nav>
           </div>
         </div>

@@ -13,7 +13,7 @@ const HomeHero = () => {
           />
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
-        <div className="h-full flex flex-col items-center text-white z-50 relative max-w-4xl text-center">
+        <div className="h-full flex flex-col items-center text-white z-40 relative max-w-4xl text-center">
           <h1 className="text-5xl font-bold mb-4">Welcome to Our Website</h1>
           <p className="text-xl mb-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat facilis beatae in similique? Veritatis deserunt sit voluptatum doloremque molestias repellat id distinctio
