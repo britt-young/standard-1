@@ -88,7 +88,7 @@ const HomeAbout = () => {
         </div>
 
         <img
-          className={`lg:w-1/2 block mx-auto object-cover object-center ${activeStep}`}
+          className={`lg:w-1/2 block mx-auto object-cover object-center shadow-2xl ${activeStep}`}
           alt={currentStep.info}
           src={currentStep.img}
         />

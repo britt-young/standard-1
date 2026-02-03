@@ -9,7 +9,7 @@ import RootLayout from "./layout/RootLayout";
 
 import Error from "./pages/Error";
 import Page1 from "./pages/Page1";
-import Page2 from "./pages/Page2";
+import Services from "./pages/Services";
 import Page3 from "./pages/Page3";
 import Page4 from "./pages/Page4";
 import Page5 from "./pages/Page5";
@@ -22,7 +22,7 @@ function App() {
       <Route path="/" element={<RootLayout />} errorElement={<Error />}>
         {/* child routes */}
         <Route index element={<Page1 />} />
-        <Route path="page-2" element={<Page2 />} />
+        <Route path="services" element={<Services />} />
         <Route path="page-3" element={<Page3 />} />
         <Route path="page-4" element={<Page4 />} />
         <Route path="page-5" element={<Page5 />} />

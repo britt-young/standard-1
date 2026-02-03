@@ -10,7 +10,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const navLinks = [
-    { name: "Page 2", path: "/page-2" },
+    { name: "Our Services", path: "/services" },
     { name: "Page 3", path: "/page-3" },
     { name: "Page 4", path: "/page-4" },
     { name: "Page 5", path: "/page-5" },
