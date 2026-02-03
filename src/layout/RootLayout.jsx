@@ -45,7 +45,7 @@ const RootLayout = () => {
   }, [isDarkMode]);
 
   return (
-    <div className="flex min-h-screen flex-col overflow-x-hidden transition-colors duration-300 ease-in-out bg-[#eff8e5]">
+    <div className="flex min-h-screen flex-col overflow-x-hidden transition-colors duration-300 ease-in-out">
       <ScrollToTop />
 
       <Helmet>
