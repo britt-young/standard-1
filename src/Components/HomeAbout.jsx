@@ -5,6 +5,10 @@ import ex1 from "../assets/imgs/1.png";
 import ex2 from "../assets/imgs/2.png";
 import ex3 from "../assets/imgs/3.png";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 const steps = [
   {
     id: 1,
@@ -50,7 +54,11 @@ const HomeAbout = () => {
   const currentStep = steps.find((step) => step.id === activeStep);
 
   return (
-    <div className="container px-5 py-14 mx-auto flex flex-wrap flex-col bg-white/60 shadow-gray-300 shadow-lg mb-20">
+    <div
+      data-aos="fade-left"
+      data-aos-duration="1000"
+      className="container px-5 py-14 mx-auto flex flex-wrap flex-col bg-white/60 shadow-gray-300 shadow-lg mb-20"
+    >
       {/* STEPPER */}
       <div className="flex mx-auto flex-row mb-10 w-full justify-between max-w-7xl">
         {steps.map((step) => {

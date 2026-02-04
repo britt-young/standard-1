@@ -1,10 +1,14 @@
 import test from "../assets/imgs/6.png";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 const Testimonials = () => {
   return (
-    <section className="mx-auto lg:min-h-150 md:h-140 h-full relative flex items-center justify-center overflow-hidden">
+    <div className="mx-auto lg:min-h-150  h-full relative flex items-center justify-center overflow-hidden">
       {/* background img with overlay */}
-      <div className="absolute top-0 left-0 w-full lg:h-full md:h-140 h-250 opacity-100 z-0">
+      <div className="absolute top-0 left-0 w-full h-full opacity-100 z-0">
         <img
           src={test}
           alt="testimonial background photo"
@@ -12,9 +16,15 @@ const Testimonials = () => {
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
-      {/* testimonials cards */}
-      <div className="h-fit flex flex-col md:flex-row items-center justify-center text-black z-40 relative max-w-7xl text-center px-15 lg:px-0">
-        <div className="flex flex-wrap -m-4">
+      <div className="h-fit flex flex-col items-center justify-center text-black z-40 relative text-center px-5">
+        <h2 className="text-white mb-10">What our customers are saying</h2>
+        {/* testimonials cards */}
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="flex flex-row px-5 lg:px-15 gap-2 lg:gap-10 pt-5"
+        >
+          {/* card */}
           <div className="bg-gray-50 shadow-lg rounded-lg lg:w-1/2 lg:mb-0 mb-6 p-4 ">
             <div className="h-full text-center">
               <img
@@ -35,6 +45,7 @@ const Testimonials = () => {
               <p className="text-gray-500">Senior Product Designer</p>
             </div>
           </div>
+          {/* card */}
           <div className="bg-gray-50 shadow-lg rounded-lg lg:w-1/2 lg:mb-0 mb-6 p-4">
             <div className="h-full text-center">
               <img
@@ -77,7 +88,7 @@ const Testimonials = () => {
           </div> */}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

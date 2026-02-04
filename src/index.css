@@ -10,15 +10,15 @@
 
 @layer base {
   /* Hide scrollbar for Chrome, Safari, Edge, and Opera */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 
-/* Hide scrollbar for IE, Edge, and Firefox */
-.no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
-}
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 
   body {
     @apply bg-white text-black font-primary;
@@ -27,7 +27,7 @@
   h1 {
     @apply text-4xl font-bold;
   }
-h2 {
+  h2 {
     @apply text-3xl font-semibold;
   }
   h3 {
@@ -65,7 +65,7 @@ h2 {
   .nav-link.active {
     @apply text-blue-600;
   }
-.btn-primary {
+  .btn-primary {
     @apply rounded-full bg-white border-2 border-white px-8 py-4 text-center text-black uppercase shadow-md shadow-gray-600 hover:bg-transparent hover:text-white transition duration-500 cursor-pointer;
   }
   .btn-secondary {
@@ -80,5 +80,9 @@ h2 {
   .svg-center {
     transform-box: fill-box;
     transform-origin: center;
+  }
+  .pattern-bg {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%230d542b' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
   }
 }

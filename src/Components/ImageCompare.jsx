@@ -49,7 +49,7 @@ const ImageCompare = () => {
     <div
       ref={containerRef}
       onClick={(e) => handleMove(e.clientX)}
-      className="relative w-full max-w-6xl h-150 rounded-xl shadow-2xl overflow-hidden select-none"
+      className="relative w-full max-w-6xl h-100 rounded-xl shadow-2xl overflow-hidden select-none"
       
     >
       <img
@@ -75,6 +75,7 @@ const ImageCompare = () => {
           }}
         />
       </div>
+      {/* divider slide */}
       <div
         onMouseDown={startDrag}
         onTouchStart={startTouch}
@@ -85,6 +86,7 @@ const ImageCompare = () => {
           <ArrowLeftRight color="green" />
         </div>
       </div>
+      {/* overlay text */}
       <div className="absolute top-4 left-4 bg-black/10 text-white px-3 py-1 rounded-lg text-sm backdrop-blur-lg">
         Before
       </div>
