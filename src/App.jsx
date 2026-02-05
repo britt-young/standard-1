@@ -15,7 +15,14 @@ import Page4 from "./pages/Page4";
 import Page5 from "./pages/Page5";
 import Legal from "./pages/Legal";
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function App() {
+  useEffect(() => {
+    AOS.init({ disable: "mobile", once: true, mirror: false });
+  }, []);
   const router = createBrowserRouter(
     createRoutesFromElements(
       // parent path

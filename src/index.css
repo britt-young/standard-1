@@ -3,10 +3,10 @@
 @import "./styles/fonts.css";
 
 /* CUSTOMIZE FONTS & NAMES, ADD BREAKPOINTS, AND CUSTOM COLORS IN THEME */
-@theme {
+/* @theme {
   --font-primary:
     "Public Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
+} */
 
 @layer base {
   /* Hide scrollbar for Chrome, Safari, Edge, and Opera */
@@ -21,7 +21,7 @@
   }
 
   body {
-    @apply bg-white text-black font-primary;
+    @apply bg-white text-black font-normal;
     line-height: 1.6;
   }
   h1 {
