@@ -1,11 +1,12 @@
 import { useState } from "react";
 import review from "../data/clientReviews";
+import Tooltip from "./Animations/Tooltip";
 
 const TestimonialCard = () => {
   const [activeReview, setActiveReview] = useState(review[0]);
 
   return (
-    <div className="relative w-full flex justify-center px-4">
+    <div className="relative w-full px-4">
       {/* Bubble */}
       <div
         className="
@@ -13,15 +14,15 @@ const TestimonialCard = () => {
         bg-white
         rounded-3xl
         shadow-xl
-        lg:h-52
-        lg:w-5xl
-        md:h-64
+        lg:h-96
+        lg:w-4xl
+        md:h-96
         md:w-3xl
-        h-72
-        w-80
+        h-96
+        w-96
         flex flex-col
         items-center
-        justify-between
+        justify-center
         px-5 pt-10 pb-16
       "
       >
@@ -29,7 +30,7 @@ const TestimonialCard = () => {
         <div
           className="
           absolute
-          -bottom-10
+          -bottom-8
           left-2/3
           lg:left-3/4
           -translate-x-1/2
@@ -40,26 +41,32 @@ const TestimonialCard = () => {
         />
 
         {/* Review Text */}
-        <h5 className="text-center italic text-base sm:text-lg md:text-xl mb-6 wrap-break-word">
+        <h5 className="text-center italic text-base sm:text-lg md:text-xl mb-0 wrap-break-word max-w-3xl">
           "{activeReview.text}"
         </h5>
+        
 
         {/* Avatars */}
-        <div className="flex justify-center -space-x-2">
+        <div className="mt-10 flex justify-center -space-x-2">
           {review.map((item) => (
-            <img
+            <Tooltip
               key={item.id}
-              src={item.avatar}
-              alt={item.name}
-              onClick={() => setActiveReview(item)}
-              className={`
-                w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
-                object-cover object-center rounded-full border-2 cursor-pointer
-                transition-transform duration-300 ease-in-out
-                hover:-translate-y-2 hover:scale-110
-                ${activeReview.id === item.id ? "border-black" : "border-gray-200"}
-              `}
-            />
+              content={`${item.name} - ${item.location}`}
+              position="top"
+            >
+              <img
+                src={item.avatar}
+                alt={item.name}
+                onClick={() => setActiveReview(item)}
+                className={`
+          w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
+          object-cover object-center rounded-full border-2 cursor-pointer
+          transition-transform duration-300 ease-in-out
+          hover:-translate-y-2 hover:scale-110
+          ${activeReview.id === item.id ? "border-black" : "border-gray-200"}
+        `}
+              />
+            </Tooltip>
           ))}
         </div>
       </div>
