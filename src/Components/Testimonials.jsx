@@ -18,7 +18,7 @@ const Testimonials = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
       <div className="h-fit flex flex-col items-center justify-center text-black z-40 relative text-center px-5">
-        <h2 className="text-white mb-20">What our customers are saying</h2>
+        <h2 className="text-white mb-10">What our customers are saying</h2>
         {/* testimonials cards */}
         <div
           data-aos="fade-up"
