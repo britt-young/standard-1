@@ -12,6 +12,7 @@ const Page1 = () => {
       <HomeAbout />
       <ComparisonGallery />
       <Testimonials />
+     
     </div>
   );
 };

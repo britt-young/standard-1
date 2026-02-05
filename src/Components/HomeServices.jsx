@@ -1,21 +1,24 @@
 import grass from "../assets/grass-silhouette.svg";
-import { Fence, Building, Leaf  } from "lucide-react";
+import { Fence, Building, Leaf } from "lucide-react";
 
 const cards = [
   {
     title: "Residential Landscaping",
     icon: <Fence size={24} strokeWidth={1.5} />,
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, me?"
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, me?",
   },
   {
     title: "Commercial Landscaping",
-    icon: <Building  size={24} strokeWidth={1.5} />,
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ad?"
+    icon: <Building size={24} strokeWidth={1.5} />,
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ad?",
   },
   {
     title: "State Parks & Gardens",
-    icon: <Leaf  size={24} strokeWidth={1.5} />,
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, so?"
+    icon: <Leaf size={24} strokeWidth={1.5} />,
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, so?",
   },
 ];
 
@@ -81,9 +84,7 @@ const HomeServices = () => {
                 </div>
 
                 <div className="grow">
-                  <p className="leading-relaxed text-base">
-                    {card.content}
-                  </p>
+                  <p className="leading-relaxed text-base">{card.content}</p>
 
                   <a className="mt-3 text-green-900 inline-flex items-center cursor-pointer">
                     Learn More
