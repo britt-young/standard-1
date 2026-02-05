@@ -8,11 +8,11 @@ import {
 import RootLayout from "./layout/RootLayout";
 
 import Error from "./pages/Error";
-import Page1 from "./pages/Page1";
+import Home from "./pages/Home";
 import Services from "./pages/Services";
-import Page3 from "./pages/Page3";
+import About from "./pages/About";
 import Page4 from "./pages/Page4";
-import Page5 from "./pages/Page5";
+import Contact from "./pages/Contact";
 import Legal from "./pages/Legal";
 
 import { useEffect } from "react";
@@ -28,11 +28,12 @@ function App() {
       // parent path
       <Route path="/" element={<RootLayout />} errorElement={<Error />}>
         {/* child routes */}
-        <Route index element={<Page1 />} />
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
         <Route path="services" element={<Services />} />
-        <Route path="page-3" element={<Page3 />} />
+        
         <Route path="page-4" element={<Page4 />} />
-        <Route path="page-5" element={<Page5 />} />
+        <Route path="contact" element={<Contact />} />
         <Route path="privacy-terms" element={<Legal />} />
       </Route>,
     ),

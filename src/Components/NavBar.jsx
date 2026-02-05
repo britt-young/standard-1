@@ -10,10 +10,11 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const navLinks = [
+    { name: "About", path: "/about" },
     { name: "Our Services", path: "/services" },
-    { name: "Page 3", path: "/page-3" },
+    
     { name: "Page 4", path: "/page-4" },
-    { name: "Page 5", path: "/page-5" },
+    { name: "Contact Us", path: "/contact" },
   ];
 
   // Email obfuscation

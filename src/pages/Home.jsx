@@ -4,7 +4,7 @@ import HomeAbout from "../Components/HomeAbout";
 import ComparisonGallery from "../Components/ComparisonGallery";
 import Testimonials from "../Components/Testimonials";
 
-const Page1 = () => {
+const Home = () => {
   return (
     <div>
       <HomeHero />
@@ -17,4 +17,4 @@ const Page1 = () => {
   );
 };
 
-export default Page1;
+export default Home;
