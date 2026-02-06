@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { TreeDeciduous } from "lucide-react";
+import { SiLeaflet } from "react-icons/si";
 import us from "../assets/imgs/5.png";
 import ex1 from "../assets/imgs/1.png";
 import ex2 from "../assets/imgs/2.png";
@@ -12,7 +12,7 @@ AOS.init();
 const steps = [
   {
     id: 1,
-    icon: TreeDeciduous,
+    icon: SiLeaflet,
     info: "2020",
     title: "local",
     img: us,
@@ -21,7 +21,7 @@ const steps = [
   },
   {
     id: 2,
-    icon: TreeDeciduous,
+    icon: SiLeaflet,
     info: "2022",
     title: "our work",
     img: ex2,
@@ -30,7 +30,7 @@ const steps = [
   },
   {
     id: 3,
-    icon: TreeDeciduous,
+    icon: SiLeaflet,
     info: "2023",
     title: "friendly",
     img: ex3,
@@ -39,7 +39,7 @@ const steps = [
   },
   {
     id: 4,
-    icon: TreeDeciduous,
+    icon: SiLeaflet,
     info: "2026",
     title: "affordable",
     img: ex1,
@@ -72,7 +72,7 @@ const HomeAbout = () => {
               className={`sm:px-6 py-3 w-1/2 sm:w-auto border-b-2 font-medium inline-flex items-center transition-all hover:cursor-pointer
                   ${
                     isActive
-                      ? "border-green-900 text-green-900"
+                      ? "border-green-600 text-green-900"
                       : "border-transparent text-gray-400 hover:text-gray-900"
                   }`}
             >

@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { ArrowLeftRight } from "lucide-react";
+import { BsArrowsExpandVertical  } from "react-icons/bs";
 import park from "../assets/imgs/b-a-park.jpg";
 import res from "../assets/imgs/b-a-res.jpg";
 import comm from "../assets/imgs/b-a-comm.jpg";
@@ -79,11 +79,11 @@ const ImageCompare = () => {
       <div
         onMouseDown={startDrag}
         onTouchStart={startTouch}
-        className="absolute top-0 h-full w-1 bg-white/50 shadow-lg"
+        className="absolute top-0 h-full w-1 bg-black/50 shadow-lg"
         style={{ left: `${position}%`, transform: "translateX(-50%)" }}
       >
-        <div className="absolute top-1/2 left-1/2 bg-white rounded-full p-1 -translate-x-1/2 -translate-y-1/2 cursor-grab">
-          <ArrowLeftRight color="green" />
+        <div className="absolute top-1/2 left-1/2 bg-black rounded-full p-1 -translate-x-1/2 -translate-y-1/2 cursor-grab">
+          <BsArrowsExpandVertical size={24} className="text-white" />
         </div>
       </div>
       {/* overlay text */}

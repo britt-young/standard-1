@@ -21,7 +21,7 @@ import "aos/dist/aos.css";
 
 function App() {
   useEffect(() => {
-    AOS.init({ disable: "mobile", once: true, mirror: false });
+    AOS.init({ disable: "mobile", once: false, mirror: false });
   }, []);
   const router = createBrowserRouter(
     createRoutesFromElements(

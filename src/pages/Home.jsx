@@ -3,6 +3,7 @@ import HomeHero from "../Components/HomeHero";
 import HomeAbout from "../Components/HomeAbout";
 import ComparisonGallery from "../Components/ComparisonGallery";
 import Testimonials from "../Components/Testimonials";
+import HomeCTA from "../Components/HomeCTA";
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
       <HomeAbout />
       <ComparisonGallery />
       <Testimonials />
-     
+     <HomeCTA />
     </div>
   );
 };
