@@ -2,7 +2,7 @@ import ImageCompare from "./ImageCompare";
 const ComparisonGallery = () => {
   return (
     <div className="min-h-fit">
-      <div className="lg:px-20 px-5 mx-auto flex flex-col justify-center items-center py-20">
+      <div data-aos="zoom-in" data-aos-duration="800" className="lg:px-20 px-5 mx-auto flex flex-col justify-center items-center py-20">
         <div>
           <h2 className="mb-5 text-center">
             The Western Landscaping Difference
@@ -14,7 +14,7 @@ const ComparisonGallery = () => {
             exceed expectations.
           </p>
         </div>
-        <div data-aos="zoom-in" data-aos-duration="800" className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-8">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-8">
           <div>
             <ImageCompare />
             <h3 className="text-center text-lg font-medium mb-4">
