@@ -14,7 +14,7 @@ const ComparisonGallery = () => {
             exceed expectations.
           </p>
         </div>
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-8 p-4">
+        <div data-aos="zoom-in" data-aos-duration="800" className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-8 p-4">
           <div>
             <ImageCompare />
             <h3 className="text-center text-lg font-medium mb-4">

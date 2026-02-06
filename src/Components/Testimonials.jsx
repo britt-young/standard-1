@@ -22,7 +22,7 @@ const Testimonials = () => {
         {/* testimonials cards */}
         <div
           data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos-duration="800"
         >
           <TestimonialCard />
         </div>

@@ -8,7 +8,7 @@ const HomeCTA = () => {
   return (
     <RippleProvider>
       <div className="pattern-bg text-black px-5 min-h-150 flex items-center">
-        <div className="bg-white w-full lg:max-w-7xl shadow-lg shadow-green-900/30 mx-auto flex flex-col lg:flex-row items-center lg:gap-10 gap-5 py-5 px-14 rounded-4xl">
+        <div data-aos="fade-right" data-aos-duration="800" className="bg-white w-full lg:max-w-7xl shadow-lg shadow-green-900/30 mx-auto flex flex-col lg:flex-row items-center lg:gap-10 gap-5 py-5 px-14 rounded-4xl">
           <div className="w-1/2 text-left">
             <h6 className="inline-flex"><SiLeaflet className="size-6 text-green-600 " />call us today</h6>
             <h2>Does Your Yard Need A Refresh?</h2>

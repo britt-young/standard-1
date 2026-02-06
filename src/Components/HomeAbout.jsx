@@ -56,7 +56,7 @@ const HomeAbout = () => {
   return (
     <div
       data-aos="fade-left"
-      data-aos-duration="1000"
+      data-aos-duration="800"
       className="container px-5 py-14 mx-auto flex flex-wrap flex-col bg-white/60 shadow-gray-300 shadow-lg mb-20"
     >
       {/* STEPPER */}
