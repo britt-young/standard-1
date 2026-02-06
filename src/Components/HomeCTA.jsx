@@ -40,7 +40,7 @@ const HomeCTA = () => {
               alt="Landscaping graphic"
               className="hidden lg:flex h-100 z-0"
             />
-            <div className="lg:flex flex-col items-start w-full gap-3 hidden mt-6 z-10 -ml-20">
+            <div className="lg:flex flex-col items-start w-full gap-3 hidden mt-6 z-10 -ml-28">
               <p className="inline-flex items-center gap-2 font-bold">
                 <CircleCheck /> Garden Beds
               </p>
