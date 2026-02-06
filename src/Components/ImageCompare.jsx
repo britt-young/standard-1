@@ -49,7 +49,7 @@ const ImageCompare = () => {
     <div
       ref={containerRef}
       onClick={(e) => handleMove(e.clientX)}
-      className="relative w-full max-w-6xl h-100 rounded-xl shadow-2xl overflow-hidden select-none"
+      className="relative w-full max-w-6xl h-110 shadow-2xl overflow-hidden select-none"
       
     >
       <img
