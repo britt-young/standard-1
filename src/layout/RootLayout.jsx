@@ -4,6 +4,7 @@ import { Helmet } from "@dr.pogodin/react-helmet";
 
 import Navbar from "../Components/NavBar";
 import ScrollToTop from "../Components/ScrollToTop";
+import Footer from "../Components/Footer";
 
 // ---- SEO CONFIG --------------------------------------------------
 const SEO_CONFIG = {
@@ -72,7 +73,7 @@ const RootLayout = () => {
         <Outlet />
       </main>
 
-      {/* Footer goes here */}
+      <Footer />
     </div>
   );
 };
