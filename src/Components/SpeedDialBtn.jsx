@@ -32,7 +32,7 @@ const SpeedDialBtn = () => {
       {/* Main button */}
       <button
         onClick={() => setOpen(!open)}
-        className="flex h-12 w-12 items-center justify-center rounded-full bg-green-900 text-white shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer"
+        className="flex h-12 w-12 items-center justify-center rounded-full bg-green-600 text-white shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer"
         aria-expanded={open}
         aria-label="Quick actions"
       >

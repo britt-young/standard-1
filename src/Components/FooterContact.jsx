@@ -48,7 +48,7 @@ const FooterContact = () => {
   }
   return (
     <RippleProvider>
-      <div className="flex flex-col items-center justify-center mx-auto bg-white rounded-xl p-6 shadow-lg h-100 hover:scale-105 transition-all duration-500">
+      <div className="flex flex-col items-center justify-center mx-auto bg-white rounded-xl p-5 shadow-lg lg:h-100 hover:scale-105 transition-all duration-500">
         {/* Title */}
         <h2 className="text-center mb-10 text-gray-900 text-2xl font-semibold">
           Get a Free Quote Today
@@ -99,7 +99,7 @@ const FooterContact = () => {
             {/* Hidden input for Netlify */}
             <input type="hidden" name="service" value={selectedService} />
             <span className="mb-2 font-medium text-sm">Select a Service:</span>
-            <div className="flex flex-row gap-2 w-96">
+            <div className="flex flex-row gap-2 lg:w-120">
               {services.map((service) => (
                 <button
                   key={service}
@@ -107,7 +107,7 @@ const FooterContact = () => {
                   name="services"
                   required
                   onClick={() => setSelectedService(service)}
-                  className={`px-1 py-1 text-sm rounded-md border transition-all duration-200 focus:outline-none cursor-pointer 
+                  className={`px-4 py-1 text-sm rounded-md border transition-all duration-200 focus:outline-none cursor-pointer 
                     ${
                       selectedService === service
                         ? "bg-green-900 text-white border-green-900"
