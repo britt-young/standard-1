@@ -15,7 +15,7 @@ const pages = [
 const Footer = () => {
   return (
     <div className="w-full h-full bg-gray-100">
-      <div className="flex flex-col lg:flex-row max-w-7xl mx-auto py-20 px-5 lg:px-0">
+      <div className="flex flex-col lg:flex-row max-w-7xl mx-auto py-12 px-5 lg:px-0">
         <div className="flex flex-col w-1/3">
           <img
             src={logo}
