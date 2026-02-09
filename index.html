@@ -29,12 +29,14 @@
 
 <body>
   <!-- hidden form for netlify -->
-  <form name="standard-1-contact" data-netlify="true" type="hidden">
-    <input type="text" name="name" />
-    <input type="email" name="email" />
-    <imput type="button" name="service" />
-    <input type="checkbox" name="agreeToPrivacy" />
-  </form>
+  <div style="display:none;">
+    <form name="standard-1-contact" data-netlify="true">
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <imput type="button" name="service" />
+      <input type="checkbox" name="privacy" />
+    </form>
+  </div>
 
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>

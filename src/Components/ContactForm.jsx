@@ -125,6 +125,7 @@ const ContactForm = () => {
           <Field className="flex gap-x-2 col-span-2">
             <div className="flex h-6 items-center">
               <Checkbox
+                name="privacy"
                 checked={enabled}
                 onChange={setEnabled}
                 className="group block size-4 rounded-full border bg-gray-50 data-checked:bg-green-600"
