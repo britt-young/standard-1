@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { IoMdArrowDropright } from "react-icons/io";
 import SpeedDialBtn from "./SpeedDialBtn";
 import ContactForm from "./ContactForm";
+import FooterContact from "./FooterContact";
 
 const pages = [
   { title: "Home", path: "/" },
@@ -87,7 +88,7 @@ const Footer = () => {
         </div>
         {/* form */}
         <div className="w-1/3 flex items-center justify-center mx-auto my-auto">
-          <ContactForm/>
+          <FooterContact />
         </div>
       </div>
     </div>
