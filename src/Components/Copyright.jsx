@@ -6,7 +6,7 @@ const pages = [
   { title: "About Us", path: "/about" },
   { title: "Our Services", path: "/services" },
   { title: "Contact Us", path: "/contact" },
-  { title: "Page4", path: "/page-4" },
+  { title: "Gallery", path: "/gallery" },
   { title: "Privacy Policy | Terms & Conditions", path: "/privacy" },
 ];
 

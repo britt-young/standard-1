@@ -11,7 +11,7 @@ import Error from "./pages/Error";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
-import Page4 from "./pages/Page4";
+import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Legal from "./pages/Legal";
 
@@ -32,7 +32,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="services" element={<Services />} />
         
-        <Route path="page-4" element={<Page4 />} />
+        <Route path="gallery" element={<Gallery />} />
         <Route path="contact" element={<Contact />} />
         <Route path="privacy-terms" element={<Legal />} />
       </Route>,
