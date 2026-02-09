@@ -36,7 +36,7 @@ const ContactForm = () => {
   };
   if (submitted) {
     return (
-      <div className="py-20 text-center">
+      <div className="flex flex-col mx-auto bg-white w-full max-w-lg rounded-xl p-8 shadow-lg py-20 text-center">
         <h2 className="text-2xl font-bold text-gray-800">
           Thank you for your message!
         </h2>
@@ -77,6 +77,7 @@ const ContactForm = () => {
             <input
               type="text"
               name="name"
+              required
               placeholder="Jane Smith"
               className="mt-1 px-4 py-2 rounded-md border border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-500"
             />
@@ -88,6 +89,7 @@ const ContactForm = () => {
             <input
               type="email"
               name="email"
+              required
               placeholder="Email@email.com"
               className="mt-1 px-4 py-2 rounded-md border border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-500"
             />
@@ -104,6 +106,7 @@ const ContactForm = () => {
                   key={service}
                   type="button"
                   name="services"
+                  required
                   onClick={() => setSelectedService(service)}
                   className={`px-4 py-2 rounded-md border transition-all duration-200 focus:outline-none cursor-pointer
                     ${
