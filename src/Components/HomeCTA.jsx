@@ -11,7 +11,7 @@ const HomeCTA = () => {
         <div
           data-aos="fade-right"
           data-aos-duration="800"
-          className="bg-white w-full lg:max-w-7xl shadow-lg shadow-green-900/30 mx-auto flex flex-col lg:flex-row items-center justify-around lg:gap-10 gap-5 py-10 lg:py-5 px-14 rounded-4xl"
+          className="bg-white w-full lg:max-w-7xl shadow-lg shadow-black/10 mx-auto flex flex-col lg:flex-row items-center justify-around lg:gap-10 gap-5 py-10 lg:py-5 px-14 rounded-4xl"
         >
           <div className="lg:w-fit text-left">
             <h6 className="inline-flex">

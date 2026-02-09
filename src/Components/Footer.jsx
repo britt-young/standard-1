@@ -1,6 +1,7 @@
 import logo from "../assets/imgs/nav-logo.jpg";
 import { Link } from "react-router-dom";
 import { IoMdArrowDropright } from "react-icons/io";
+import SpeedDialBtn from "./SpeedDialBtn";
 
 const pages = [
   { title: "Home", path: "/" },
@@ -21,11 +22,12 @@ const Footer = () => {
             alt="business logo"
             className="lg:h-52 flex-initial w-100"
           />
-          <p className="text-left">
+          <p className="text-left mt-5">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
             minus voluptatibus magni earum id? Dolore ab accusantium
             voluptatibus obcaecati veritatis?
           </p>
+          <SpeedDialBtn />
         </div>
         {/* link side */}
         <div className="w-1/3 flex flex-row items-start justify-center gap-20">
