@@ -2,6 +2,7 @@ import logo from "../assets/imgs/nav-logo.jpg";
 import { Link } from "react-router-dom";
 import { IoMdArrowDropright } from "react-icons/io";
 import SpeedDialBtn from "./SpeedDialBtn";
+import ContactForm from "./ContactForm";
 
 const pages = [
   { title: "Home", path: "/" },
@@ -85,8 +86,8 @@ const Footer = () => {
           </div>
         </div>
         {/* form */}
-        <div className="h-72 w-1/3 bg-gray-200 flex items-center justify-center mx-auto my-auto">
-          this is a form
+        <div className="w-1/3 flex items-center justify-center mx-auto my-auto">
+          <ContactForm/>
         </div>
       </div>
     </div>
