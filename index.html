@@ -28,6 +28,21 @@
 </head>
 
 <body>
+   <!-- hidden form for netlify -->
+  <form name="standard-1-contact" data-netlify="true" hidden>
+    <input type="text" name="first-name" />
+    <input type="text" name="last-name" />
+    <input type="text" name="company" />
+    <input type="email" name="email" />
+    <input type="text" name="phone-number" />
+    <select name="selectedPackage">
+      <option value="whole">Whole</option>
+      <option value="member">Membership</option>
+      <option value="e-comm">E-Commerce</option>
+    </select>
+    <input type="checkbox" name="agreeToPrivacy" />
+  </form>
+
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
