@@ -3,6 +3,7 @@ import RippleProvider from "./Animations/RippleProvider";
 import { Field, Label, Checkbox } from "@headlessui/react";
 import { Link } from "react-router-dom";
 
+
 const ContactForm = () => {
   const [selectedService, setSelectedService] = useState("");
 
@@ -148,7 +149,7 @@ const ContactForm = () => {
             <Label className="text-sm text-gray-900 content-center">
               By selecting this, you agree to our
               <Link
-                to="/privacy"
+                to="/privacy-terms"
                 className="underline ms-1 hover:text-green-600"
               >
                 privacy policy
