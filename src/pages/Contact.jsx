@@ -14,12 +14,12 @@ const Contact = () => {
         />
         <div className="absolute inset-0 bg-black/30 opacity-50"></div>
       </div>
-      <div className="z-10 w-full flex flex-col md:flex-row items-start max-w-7xl">
-        <div className="bg-white rounded-lg p-4 w-1/2 flex flex-col items-end">
+      <div className="z-10 w-full flex flex-col md:flex-row items-center max-w-7xl">
+        <div className="bg-white rounded-lg p-4 w-1/2 flex flex-col items-end shadow-xl shadow-black/30">
           <ContactInfo />
           <SocialMedia />
         </div>
-        <div className="w-1/2">
+        <div className="w-1/2 shadow-xl shadow-black/30">
           <ContactForm />
         </div>
       </div>
