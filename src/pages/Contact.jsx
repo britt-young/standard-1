@@ -19,7 +19,7 @@ const Contact = () => {
           <ContactInfo />
           <SocialMedia />
         </div>
-        <div className="w-1/2 shadow-xl shadow-black/30">
+        <div className="w-1/2">
           <ContactForm />
         </div>
       </div>

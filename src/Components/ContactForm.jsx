@@ -49,7 +49,7 @@ const ContactForm = () => {
 
   return (
     <RippleProvider>
-      <div className="flex flex-col mx-auto bg-white w-full max-w-lg rounded-xl p-8 shadow-lg">
+      <div className="flex flex-col mx-auto bg-white w-full max-w-lg rounded-xl p-8 shadow-xl shadow-black/30">
         {/* Title */}
         <h2 className="text-center mb-6 text-gray-900 text-2xl font-semibold">
           Get a Free Quote Today
