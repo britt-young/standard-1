@@ -3,7 +3,7 @@ const ComparisonGallery = () => {
   return (
     <div className="min-h-fit">
       <div data-aos="zoom-in" data-aos-duration="800" className="lg:px-20 px-5 mx-auto flex flex-col justify-center items-center py-20">
-        <div>
+        <div className="max-w-7xl">
           <h2 className="mb-5 text-center">
             The Western Landscaping Difference
           </h2>
