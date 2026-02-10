@@ -77,7 +77,7 @@ export default function Navbar() {
 
               <NavLink
                 data-ripple
-                to="/page-5"
+                to="/contact"
                 onClick={() => setOpen(false)}
                 className="hidden md:flex rounded-full bg-green-600 border-2 border-green-600 hover:bg-white hover:text-black px-8 py-4 text-center text-white uppercase transition duration-500"
               >

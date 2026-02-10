@@ -64,10 +64,7 @@ const RootLayout = () => {
         </script>
       </Helmet>
 
-      <Navbar
-        isDarkMode={isDarkMode}
-        toggleDarkMode={toggleDarkMode}
-      />
+      <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
 
       <main className="flex-1 w-full">
         <Outlet />
