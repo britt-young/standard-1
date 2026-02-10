@@ -14,8 +14,8 @@ const HomeHero = () => {
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
         <div className="h-fit flex flex-col items-center justify-center text-white z-40 relative max-w-4xl text-center px-5">
-          <h1 className="mb-4">Welcome to Our Website</h1>
-          <p className="mb-8">
+          <h1 className="mb-4 lg:max-w-xl">Expert Landscaping & Gardening Care Services</h1>
+          <p className="mb-8 px-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat facilis beatae in similique? Veritatis deserunt sit voluptatum doloremque molestias repellat id distinctio
           </p>
           <div className="flex flex-col sm:flex-row lg:gap-10 md:gap-6 gap-4">
