@@ -19,7 +19,7 @@ const TestimonialCard = () => {
         md:h-96
         md:w-3xl
         h-96
-        w-96
+        w-80
         flex flex-col
         items-center
         justify-center

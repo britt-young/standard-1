@@ -29,7 +29,7 @@ const HomeCTA = () => {
             />
             <button
               data-ripple
-              className="inline-flex rounded-full bg-green-900 border-2 border-green-900 hover:bg-white hover:text-black px-8 py-4 items-center text-white uppercase transition duration-500 gap-2 mt-0 lg:mt-10 cursor-pointer lg:w-fit w-full justify-center"
+              className="inline-flex rounded-full bg-green-900 border-2 border-green-900 hover:bg-white hover:text-black md:px-8 py-4 items-center text-white uppercase transition duration-500 gap-2 mt-0 lg:mt-10 cursor-pointer lg:w-fit w-full justify-center"
             >
               Get a free consult <ArrowRight />
             </button>

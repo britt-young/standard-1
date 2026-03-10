@@ -11,13 +11,13 @@ const Footer = () => {
   return (
     <div className="w-full h-full bg-gray-100">
       <div className="flex flex-col lg:flex-row max-w-6xl gap-10 mx-auto py-12 px-5 lg:px-0">
-        <div className="flex flex-col w-1/2">
+        <div className="flex flex-col md:w-1/2">
           <img
             src={logo}
             alt="business logo"
-            className="lg:h-55 flex-initial w-105"
+            className="lg:h-55 flex-initial md:w-105"
           />
-          <p className="text-left my-5 w-105">
+          <p className="text-start md:text-left my-5 md:w-105">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
             minus voluptatibus magni earum id? Dolore ab accusantium
             voluptatibus obcaecati veritatis?
