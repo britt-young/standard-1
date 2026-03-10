@@ -24,7 +24,7 @@ const Footer = () => {
           </p>
           <SpeedDialBtn />
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2">
           <FooterContact />
         </div>
       </div>
