@@ -14,7 +14,8 @@ const Copyright = () => {
   return (
     <div className="bg-green-900">
       <div className="flex flex-row justify-end px-5 items-center relative z-0 text-gray-50">
-        <p>Copyright @2026 Gulf Coast Web Designs & Development</p>
+        <p className="hidden md:flex">Copyright @ 2026 Gulf Coast Web Designs & Development</p>
+        <p className="md:hidden flex">Copyright @ 2026 Gulf Coast WDD</p>
       </div>
     </div>
   );
