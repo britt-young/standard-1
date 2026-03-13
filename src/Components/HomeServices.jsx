@@ -6,7 +6,7 @@ const cards = [
     title: "Residential Landscaping",
     icon: <Fence size={24} strokeWidth={1.5} />,
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, me?",
+      "Single Family Homes & Neighborhood Parks and Community Areas",
   },
   {
     title: "Commercial Landscaping",
